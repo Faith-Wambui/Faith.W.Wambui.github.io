@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith Wambui - Portfolio</title>
+    <link rel="icon" type="image" href=/assets/images/logo.png>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Home Page/styles.css">
+    <link rel="stylesheet" href="/Home Page/timeline-styles.css">
+    <link rel="stylesheet" href="/Home Page/tools.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="top-navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <!-- Light theme logo -->
+                <img src="/assets/images/logo.png" alt="FW Logo" class="logo-image light-logo">
+                <!-- Dark theme logo -->
+                <img src="/assets/images/dark_logo.png" alt="FW Logo" class="logo-image dark-logo">
+                <span class="logo-text">Faith Wambui | Portfolio</span>
+            </div>
+            <div class="navbar-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Side Navigation -->
+    <aside class="side-nav" id="sideNav">
+        <nav class="side-nav-content">
+            <ul class="nav-links">
+                <li><a href="#projects" class="nav-link" data-tooltip="Featured Projects">
+                    <i class="fas fa-folder-open"></i>
+                    <span>Featured Projects</span>
+                </a></li>
+                <li><a href="#experience" class="nav-link" data-tooltip="Experience">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Work Experience</span>
+                </a></li>
+                <li><a href="#tools" class="nav-link" data-tooltip="Tools">
+                    <i class="fas fa-code"></i>
+                    <span>Tools</span>
+                </a></li>
+                <li><a href="#connect" class="nav-link" data-tooltip="Experience">
+                    <i class="fas fa-envelope"></i>
+                    <span>Connect with Me</span>
+                </a></li>
+                 <li><a href="#resume" class="nav-link" data-tooltip="Blog">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>Resume</span>
+                </a></li>
+                
+            </ul>
+            <div class="nav-footer">
+                <div class="social-nav">
+                    <a href="mailto:wambuifaith2@gmail.com" class="social-nav-link" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/Faith-Wambui" class="social-nav-link" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ms-faith-wambui" class="social-nav-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                   
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-greeting">Hi, I'm <span class="hero-name">Faith Wambui</span></h1>
+                    <p class="hero-description">
+                        I'm a data professional who believes technology should serve both people and the planet. Working at the intersection of AI adoption, data governance, and sustainability, I help organizations unlock insights from their data while ensuring it's used ethically and responsibly. Whether I'm building analytics solutions, implementing AI systems, or designing data governance frameworks, my focus is always on creating impact that matters and making sure that as we advance technologically, we do so in ways that are transparent, equitable, and sustainable for future generations.
+                    </p>
+                    <p class="hero-title">
+                        <span class="typed-gradient"></span>
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="/Projects/projects.html" class="btn-primary">View Projects</a>
+                        <a href="/Contact/contact.html" class="btn-primary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    Scroll to explore
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Projects showcasing my skills and experience.</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/assets/projects/Carbon Removal/carbon removal.png" alt="Global Carbon Removal">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Global Carbon Removal</h3>
+                        <p class="project-description">
+                            Analysis of carbon removal projects worldwide, highlighting operational status and development potential.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">Data Analysis</span>
+                            <span class="tech-tag">Visualization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://public.tableau.com/views/GlobalCarbonRemovalProjectsDashboard/GLOBALCARBONREMOVALDASHBOARD?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="project-link"><i class="fas fa-chart-bar"></i> Tableau</a>
+                            <a href="https://faith-wambui.github.io/Global-Carbon-Removal/" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://www.linkedin.com/pulse/race-clean-our-air-deep-dive-global-carbon-removal-projects-wambui-wzlsf/?trackingId=mI2hfJomXd5FBIZbeqrIfA%3D%3D" class="project-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/assets/projects/Ren En/Ren En.png" alt="Africa Energy Transition">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Africa's Energy Transition 1990-2021</h3>
+                        <p class="project-description">
+                            Exploring Africa's journey towards renewable energy adoption over three decades with strategic insights.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Data Analysis</span>
+                            <span class="tech-tag">Report Writing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="/assets/projects/Ren En/AFRICA'S TRANSITION TO SUSTAINABLE ENERGY 1990-2021.pdf" class="project-link"><i class="fas fa-file-alt"></i> Report</a>
+                            <a href="/assets/projects/Ren En/AFRICA'S TRANSITION TO SUSTAINABLE ENERGY 1990-2021.html" class="project-link"><i class="fab fa-python"></i> Jupyter</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="view-all-btn">
+                <a href="/Projects/projects.html" class="btn-primary">View All Projects</a>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">A timeline of my professional journey</p>
+            </div>
+            <!-- Timeline -->
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <!-- Experience 1 - Right Side -->
+                <div class="timeline-item timeline-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Dec 2023 – Present
+                        </span>
+                        <h2 class="timeline-role">Business Intelligence Consultant</h2>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Kilimo Bora AgroTech Solutions
+                        </div>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Nairobi County, Kenya
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 - Left Side -->
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Apr 2023 – Present
+                        </span>
+                        <h2 class="timeline-role">Impact Rater</h2>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Impaakt
+                        </div>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Remote
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3 - Right Side -->
+                <div class="timeline-item timeline-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Oct 2021 – Dec 2022
+                        </span>
+                        <h2 class="timeline-role">Project Coordinator</h2>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Firefly Construction Limited
+                        </div>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Nairobi, Kenya
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 4 - Left Side -->
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Nov 2020 – Sep 2021
+                        </span>
+                        <h2 class="timeline-role">Engineering Associate</h2>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            The Sanergy Collaborative
+                        </div>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Machakos, Kenya
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 5 - Right Side -->
+                <div class="timeline-item timeline-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Oct 2020 – Nov 2020
+                        </span>
+                        <h2 class="timeline-role">YALI East Africa Fellow</h2>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            YALI Regional Leadership Center East Africa
+                        </div>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Nairobi, Kenya
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 6 - Left Side -->
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Jul 2020 – Nov 2020
+                        </span>
+                        <h2 class="timeline-role">Process and Quality Fellow</h2>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            The Sanergy Collaborative
+                        </div>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Nairobi, Kenya
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 7 - Right Side -->
+                <div class="timeline-item timeline-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Feb 2017 – Mar 2020
+                        </span>
+                        <h2 class="timeline-role">Project Control Engineer</h2>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Snow-In Engineering Limited
+                        </div>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Nairobi, Kenya
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 8 - Left Side -->
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Aug 2016 – Jan 2017
+                        </span>
+                        <h2 class="timeline-role">Project Assistant</h2>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Africa Waste and Environment Management Centre
+                        </div>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Nairobi, Kenya
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 9 - Right Side -->
+                <div class="timeline-item timeline-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Jan 2015 – Apr 2015
+                        </span>
+                        <h2 class="timeline-role">Engineering Trainee</h2>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            DEVKI Steel Mills
+                        </div>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Ruiru, Kenya
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 10 - Left Side -->
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Mar 2013 – Jan 2020
+                        </span>
+                        <h2 class="timeline-role">Co-Founder & COO</h2>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Fanitah Fashions
+                        </div>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Nairobi, Kenya
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 11 - Right Side -->
+                <div class="timeline-item timeline-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Jan 2013 – Apr 2013
+                        </span>
+                        <h2 class="timeline-role">Engineering Trainee</h2>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Brookside - Gicheha Farm
+                        </div>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Ruiru, Kenya
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 12 - Left Side -->
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Aug 2009
+                        </span>
+                        <h2 class="timeline-role">Enumerator</h2>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Kenya National Bureau of Statistics
+                        </div>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Nairobi County, Kenya
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Tools I Use Section -->
+        <section id="tools">
+            <div class="section-header">
+                <h2 class="section-title">Tools & Technologies</h2>
+                <p class="section-subtitle">My technical toolkit.</p>
+            </div>
+            <div class="tools-container">
+                <div class="tools-grid">
+                    <!-- Python -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/python-logo.png" alt="Python">
+                        </div>
+                        <span class="tool-name">Python</span>
+                    </div>
+
+                    <!-- Jupyter -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/jupyter-logo.png" alt="Jupyter">
+                        </div>
+                        <span class="tool-name">Jupyter</span>
+                    </div>
+
+                    <!-- SQL -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/sql-logo.png" alt="SQL">
+                        </div>
+                        <span class="tool-name">SQL</span>
+                    </div>
+
+                    <!-- Excel -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/excel-logo.png" alt="Excel">
+                        </div>
+                        <span class="tool-name">Excel</span>
+                    </div>
+
+                    <!-- Power BI -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/powerbi-logo.png" alt="Power BI">
+                        </div>
+                        <span class="tool-name">Power BI</span>
+                    </div>
+
+                    <!-- Tableau -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/tableau-logo.png" alt="Tableau">
+                        </div>
+                        <span class="tool-name">Tableau</span>
+                    </div>
+
+                    <!-- SPSS -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/spss-logo.png" alt="SPSS">
+                        </div>
+                        <span class="tool-name">SPSS</span>
+                    </div>
+
+                    <!-- NVivo-->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/nvivo-logo.png" alt="NVivo">
+                        </div>
+                        <span class="tool-name">NVivo</span>
+                    </div>
+
+                    <!-- Stata-->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/stata-logo.png" alt="Stata">
+                        </div>
+                        <span class="tool-name">Stata</span>
+                    </div>
+
+                    <!-- ODK -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/odk-logo.png" alt="ODK">
+                        </div>
+                        <span class="tool-name">ODK</span>
+                    </div>
+
+                    <!-- KOBO Collect -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/kobo-logo.png" alt="KOBO Collect">
+                        </div>
+                        <span class="tool-name">KOBO Collect</span>
+                    </div>
+
+                    <!-- MS Project -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/msproject-logo.png" alt="MS Project">
+                        </div>
+                        <span class="tool-name">MS Project</span>
+                    </div>
+
+                    <!-- Asana -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/asana-logo.png" alt="Asana">
+                        </div>
+                        <span class="tool-name">Asana</span>
+                    </div>
+
+                    <!-- Github -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/github-logo.png" alt="GitHub">
+                        </div>
+                        <span class="tool-name">GitHub</span>
+                    </div>
+                    
+                    <!-- VS Code-->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/vscode-logo.png" alt="VS Code">
+                        </div>
+                        <span class="tool-name">VS Code</span>
+                    </div>
+
+                     <!-- MsOffice -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/msoffice-logo.png" alt="MS Office">
+                        </div>
+                        <span class="tool-name">MS Office</span>
+                    </div>
+
+                    <!-- G Suite-->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/gsuite-logo.png" alt="G Suite">
+                        </div>
+                        <span class="tool-name">G-Suite</span>
+                    </div>
+
+                    <!-- Zoom -->
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <img src="/assets/tools/zoom-logo.png" alt="Zoom">
+                        </div>
+                        <span class="tool-name">Zoom</span>
+                    </div>
+                </div>
+                <div class="view-all-skills">
+                    <a href="/Skills/skills.html" class="btn-primary">
+                        <i class="fas fa-arrow-right"></i> View All Skills & Expertise
+                    </a>
+                </div>
+            </div>
+        </section>
+
+         <!-- Connect With Me Section -->
+        <section id="connect">
+            <div class="connect-container">
+                <div class="section-header">
+                    <h2 class="section-title">Connect with Me</h2>
+                    <p class="section-subtitle">Find me on the following platforms</p>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:wambuifaith2@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/Faith-Wambui" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ms-faith-wambui" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://public.tableau.com/app/profile/faith.wambui" class="social-link" title="Tableau"><i class="fas fa-chart-bar"></i></a>
+                    <a href="https://www.kaggle.com/faithwwambui" class="social-link" title="Kaggle"><i class="fab fa-kaggle"></i></a>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Resume Section -->
+        <section id="resume">
+                <div class="section-header">
+                    <h2 class="section-title">Download Resume</h2>
+                    <p class="section-subtitle">Get my latest resume in PDF format</p>
+                </div>
+                <div class="resume-download-container">
+                    <div class="resume-info">
+                        <i class="fas fa-file-pdf resume-icon"></i>
+                        <div class="resume-details">
+                            <h3>Professional Resume</h3>
+                            <p>Overview of my experience, skills, and qualifications</p>
+                        </div>
+                    </div>
+                    <a href="Faith_Resume.pdf" class="download-btn" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+       
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div>
+                        <h4>Quick Links</h4>
+                        <ul class="quick-links">
+                            <li><span class="current-page">Home</span></li>
+                            <li><a href="/About/about.html">About Me</a></li>
+                            <li><a href="/Projects/projects.html">Projects</a></li>
+                            <li><a href="/Blog/blog.html">Blog</a></li>
+                            <li><a href="/Experience/experience.html">Experience</a></li>
+                            <li><a href="/Education/education.html">Education</a></li>
+                            <li><a href="/Skills/skills.html">Skills</a></li>
+                            <li><a href="/Contact/contact.html">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 | Faith Wambui</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="/Home Page/script.js"></script>
+</body>
+</html>

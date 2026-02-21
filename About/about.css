@@ -1,0 +1,433 @@
+/* ===================================
+   ABOUT PAGE SPECIFIC STYLES
+   =================================== */
+
+.about-page {
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+/* ===================================
+   PROFILE SECTION
+   =================================== */
+
+.profile-section {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    background: var(--card-bg);
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    box-shadow: 0 4px 15px var(--shadow-light);
+    border: 2px solid var(--border-color);
+    transition: all var(--transition-medium);
+}
+
+.profile-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--shadow-medium);
+    border-color: var(--royal-blue);
+}
+
+.profile-pic {
+    width: 160px;
+    height: 180px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 4px solid var(--royal-blue);
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px var(--shadow-medium);
+    transition: all var(--transition-medium);
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    border-color: var(--orange);
+}
+
+.profile-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin: 0.5rem 0;
+    color: var(--text-primary);
+    letter-spacing: -0.5px;
+}
+
+.profile-title {
+    font-size: 1.1rem;
+    color: var(--royal-blue);
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+
+/* ===================================
+   BACKGROUND SECTION - FULL WIDTH
+   =================================== */
+
+#background-section {
+    background: var(--bg-primary);
+    width: 100%;
+    padding: 4rem 0;
+    margin: 0;
+}
+
+.background-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    text-align: left;
+}
+
+.intro-text {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    line-height: 1.8;
+}
+
+/* ===================================
+   HIGHLIGHT BOX
+   =================================== */
+
+.highlight-box {
+    background: var(--bg-tertiary);
+    border-left: 4px solid var(--royal-blue);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 10px 10px 0;
+    transition: all var(--transition-medium);
+}
+
+.highlight-box:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px var(--shadow-light);
+}
+
+.highlight-box h3 {
+    color: var(--royal-blue);
+    margin-top: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.highlight-box p {
+    margin-bottom: 0;
+    color: var(--text-primary);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* ===================================
+   EXPERIENCE HIGHLIGHT
+   =================================== */
+
+.experience-highlight {
+    background: var(--bg-tertiary);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    transition: all var(--transition-medium);
+}
+
+.experience-highlight:hover {
+    border-color: var(--royal-blue);
+    box-shadow: 0 4px 12px var(--shadow-light);
+}
+
+.experience-highlight h4 {
+    color: var(--royal-blue);
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.experience-highlight ul {
+    padding-left: 1.5rem;
+    margin: 0.8rem 0;
+}
+
+.experience-highlight li {
+    margin-bottom: 0.8rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.experience-highlight strong {
+    color: var(--royal-blue);
+    font-weight: 600;
+}
+
+/* ===================================
+   WHAT I DO SECTION - FULL WIDTH
+   =================================== */
+
+#what-i-do-section {
+    background: var(--bg-secondary);
+    width: 100%;
+    padding: 4rem 0;
+    margin: 0;
+}
+
+.what-i-do-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+
+.what-i-do-section .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 1.8rem;
+    border: 2px solid var(--border-color);
+    transition: all var(--transition-medium);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px var(--shadow-light);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--shadow-medium);
+    border-color: var(--royal-blue);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 0.8rem 0;
+    line-height: 1.3;
+    font-family: 'Playfair Display', serif;
+}
+
+.skill-description {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0;
+    flex-grow: 1;
+    font-size: 0.95rem;
+}
+
+/* ===================================
+   INTERESTS SECTION - FULL WIDTH
+   =================================== */
+
+#interests-section {
+    background: var(--bg-primary);
+    width: 100%;
+    padding: 4rem 0;
+    margin: 0;
+}
+
+.interests-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+
+.interests-section .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.interests-grid {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.interest-tag {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 45%;
+    transition: all var(--transition-medium);
+    cursor: pointer;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.interest-tag:hover {
+    background: var(--royal-blue);
+    color: white;
+    border-color: var(--royal-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px var(--shadow-heavy);
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+@media (max-width: 768px) {
+    .about-page {
+        padding: 0;
+    }
+
+    #profile-section,
+    #background-section,
+    #what-i-do-section,
+    #interests-section {
+        padding: 3rem 0;
+    }
+
+    .profile-section,
+    .background-section,
+    .what-i-do-section,
+    .interests-section {
+        padding: 0 1.5rem;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-name {
+        font-size: 1.8rem;
+    }
+
+    .profile-title {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .interest-tag {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.4rem;
+    }
+
+    .intro-text {
+        font-size: 0.95rem;
+    }
+
+    .highlight-box,
+    .experience-highlight {
+        padding: 1.2rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .background-section,
+    .what-i-do-section,
+    .interests-section {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #profile-section,
+    #background-section,
+    #what-i-do-section,
+    #interests-section {
+        padding: 2rem 0;
+    }
+
+    .profile-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .background-section,
+    .what-i-do-section,
+    .interests-section {
+        padding: 0 1rem;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .skills-grid {
+        gap: 1rem;
+    }
+
+    .skill-card {
+        padding: 1.5rem;
+    }
+}
+
+/* ===================================
+   ENSURE FULL WIDTH ON ALL DEVICES
+   =================================== */
+
+/* Override any container restrictions */
+#background-section,
+#what-i-do-section,
+#interests-section,
+#profile-section {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Content containers stay centered */
+.background-section,
+.what-i-do-section,
+.interests-section {
+    box-sizing: border-box;
+}

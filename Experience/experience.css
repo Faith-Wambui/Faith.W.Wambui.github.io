@@ -1,0 +1,119 @@
+/* experience.css */
+
+/* Experience Page Specific Styles */
+.experience-page {
+   padding: 0;
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+/* Page Header - Centered */
+.experience-page .page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+}
+
+.experience-page .page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 900;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.experience-page .page-title::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 4px;
+    background: var(--orange);
+    border-radius: 2px;
+}
+
+.experience-page .page-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+/* Experience Cards Layout */
+.experience-timeline {
+   max-width: 1000px;
+    margin: 0 auto;
+}
+
+.experience-card {
+   background: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px var(--shadow-light);
+    border: 2px solid var(--border-color);
+    border-left: 4px solid var(--royal-blue);
+    transition: all var(--transition-medium);
+}
+
+.experience-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 20px var(--shadow-medium);
+    border: 2px solid var(--royal-blue);
+    border-left-width: 6px;
+    
+}
+
+/* CV Download Section */
+.cv-download-section {
+
+    background: var(--card-bg);
+    padding: 2rem;
+    margin-top: 4rem;
+    width:100%;
+    text-align: center;
+    transition: all var(--transition-medium);
+}
+
+
+.cv-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1rem 2rem;
+    background: var(--royal-blue);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all var(--transition-medium);
+    box-shadow: 0 4px 15px var(--shadow-heavy);
+}
+
+.cv-download-btn:hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px var(--shadow-heavy);
+    background: var(--navy);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .experience-page {
+        padding: 1.5rem;
+    }
+    
+    .experience-card {
+        padding: 1.5rem;
+    }
+    
+    .experience-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

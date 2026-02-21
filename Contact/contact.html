@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Faith Wambui</title>
+    <link rel="icon" type="image" href="/assets/images/logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Home Page/styles.css">
+    <link rel="stylesheet" href="/Contact/contact.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="top-navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <!-- Light theme logo -->
+                <img src="/assets/images/logo.png" alt="FW Logo" class="logo-image light-logo">
+                <!-- Dark theme logo -->
+                <img src="/assets/images/dark_logo.png" alt="FW Logo" class="logo-image dark-logo">
+                <span class="logo-text">Faith Wambui | Portfolio</span>
+            </div>
+            <div class="navbar-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="contact-page">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title">Get In Touch</h1>
+                <p class="page-subtitle">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+            </div>
+
+            <!-- Contact Container -->
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2 class="contact-section-title">Contact Information</h2>
+                    <p class="section-description">Feel free to reach out through any of these channels. I typically respond within 24 hours.</p>
+                    
+                    <div class="contact-details">
+                        <!-- Email -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <a href="mailto:wambuifaith2@gmail.com">wambuifaith2@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <a href="tel:+254714293432">+254 714 293 432</a>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>LinkedIn</h3>
+                                <a href="https://linkedin.com/in/ms-faith-wambui" target="_blank">linkedin.com/in/faithwambui</a>
+                            </div>
+                        </div>
+                        
+                        <!-- LinkedIn -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>GitHub</h3>
+                                <a href="https://github.com/Faith-Wambui" target="_blank">github.com/Faith-Wambui</a>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Location</h3>
+                                <p>Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2 class="contact-section-title">Send a Message</h2>
+                    <p class="section-description">Fill out the form below and I'll get back to you as soon as possible.</p>
+                    
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mbdaddlz" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email *</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or inquiry..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+
+                    <div class="form-success" id="formSuccess" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Thank you for your message! I'll get back to you soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            </div>
+        <!-- Availability -->
+        <div class="availability-section">
+            <div class="availability-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="availability-text">
+                <h3>Currently Available</h3>
+                <p>I work with organizations to turn data into responsible strategy and measurable impact. Currently available for full-time roles or projects where these skills matter.</p>
+            </div>
+        </div>
+
+
+                
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div>
+                        <h4>Quick Links</h4>
+                        <ul class="quick-links">
+                            <li><a href="/Home Page/index.html">Home</a></li>
+                            <li><a href="/About/about.html">About Me</a></li>
+                            <li><a href="/Projects/projects.html">Projects</a></li>
+                            <li><a href="/Blog/blog.html">Blog</a></li>
+                            <li><a href="/Experience/experience.html">Experience</a></li>
+                            <li><a href="/Education/education.html">Education</a></li>
+                            <li><a href="/Skills/skills.html">Skills</a></li>
+                            <li><span class="current-page">Contact</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 | Faith Wambui</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="/Home Page/script.js"></script>
+    <script src="/Contact/contact.js"></script>
+</body>
+</html>

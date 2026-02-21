@@ -1,0 +1,404 @@
+/* ============================================
+   CENTERED TIMELINE STYLES - UPDATED
+   Replace the existing timeline styles in your styles.css with this
+   ============================================ */
+
+/* Timeline Container */
+.timeline-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+/* Center Line */
+.timeline-line {
+    position: absolute;
+    width: 4px;
+    background: linear-gradient(to bottom, var(--royal-blue), var(--navy));
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* Timeline Item - Base Styles */
+.timeline-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) { animation-delay: 0.15s; }
+.timeline-item:nth-child(3) { animation-delay: 0.2s; }
+.timeline-item:nth-child(4) { animation-delay: 0.25s; }
+.timeline-item:nth-child(5) { animation-delay: 0.3s; }
+.timeline-item:nth-child(6) { animation-delay: 0.35s; }
+.timeline-item:nth-child(7) { animation-delay: 0.4s; }
+.timeline-item:nth-child(8) { animation-delay: 0.45s; }
+.timeline-item:nth-child(9) { animation-delay: 0.5s; }
+.timeline-item:nth-child(10) { animation-delay: 0.55s; }
+.timeline-item:nth-child(11) { animation-delay: 0.6s; }
+.timeline-item:nth-child(12) { animation-delay: 0.65s; }
+
+/* Timeline Dot */
+.timeline-dot {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: var(--card-bg);
+    border: 4px solid var(--royal-blue);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    box-shadow: 0 0 0 4px rgba(24, 0, 173, 0.1);
+    transition: all var(--transition-medium);
+}
+
+[data-theme="dark"] .timeline-dot {
+    background: var(--bg-primary);
+    border-color: var(--royal-blue);
+    box-shadow: 0 0 0 4px rgba(91, 127, 255, 0.15);
+}
+
+.timeline-item:hover .timeline-dot {
+    transform: translateX(-50%) scale(1.3);
+    box-shadow:  0 0 0 4px color-mix(in srgb, var(--royal-blue) 50%, transparent);
+    border-color: var(--navy);
+}
+
+/* Timeline Content */
+.timeline-content {
+    background: var(--card-bg);
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--shadow-light);
+    width: calc(50% - 40px);
+    transition: all var(--transition-medium);
+    border: 2px solid var(--border-color);
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--shadow-medium);
+    border-color: var(--royal-blue);
+}
+
+/* Right Side Items */
+.timeline-right {
+    justify-content: flex-end;
+}
+
+.timeline-right .timeline-content {
+    margin-left: auto;
+    text-align: left;
+}
+
+/* Left Side Items */
+.timeline-left {
+    justify-content: flex-start;
+}
+
+.timeline-left .timeline-content {
+    margin-right: auto;
+    text-align: left;
+}
+
+/* Timeline Date */
+.timeline-date {
+    display: inline-block;
+    color: var(--royal-blue);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding: 0.4rem 1rem;
+    background: rgba(24, 0, 173, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgba(24, 0, 173, 0.2);
+    transition: all var(--transition-fast);
+}
+
+[data-theme="dark"] .timeline-date {
+    background: rgba(91, 127, 255, 0.15);
+    border-color: rgba(91, 127, 255, 0.3);
+    color: var(--royal-blue);
+}
+
+.timeline-date i {
+    margin-right: 5px;
+}
+
+/* Timeline Role */
+.timeline-role {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 10px 0;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.3;
+}
+
+/* Timeline Company */
+.timeline-company {
+    font-size: 1.1rem;
+    color: var(--royal-blue);
+    font-weight: 600;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.timeline-company i {
+    font-size: 1rem;
+}
+
+/* Timeline Location */
+.timeline-location {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.timeline-location i {
+    font-size: 0.9rem;
+}
+
+/* Timeline Description */
+.timeline-description {
+    margin-top: 15px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.timeline-description li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.timeline-description li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--royal-blue);
+    font-weight: bold;
+}
+
+/* Resume Download Section Styles */
+#resume {
+    background: var(--bg-primary);
+}
+
+.resume-download-section {
+    padding: 4rem 2rem;
+}
+
+.resume-download-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--shadow-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    border: 2px solid var(--border-color);
+    transition: all var(--transition-medium);
+}
+
+.resume-download-container:hover {
+    box-shadow: 0 8px 20px var(--shadow-medium);
+    border-color: var(--royal-blue);
+}
+
+.resume-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.resume-icon {
+    font-size: 3rem;
+    color: var(--royal-blue);
+    transition: all var(--transition-medium);
+}
+
+.resume-download-container:hover .resume-icon {
+    transform: scale(1.1);
+    color: var(--orange);
+}
+
+.resume-details h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.resume-details p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1rem 2rem;
+    background: var(--royal-blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all var(--transition-medium);
+    box-shadow: 0 4px 15px var(--shadow-heavy);
+    white-space: nowrap;
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px var(--shadow-heavy);
+    background: var(--navy);
+}
+
+.download-btn i {
+    font-size: 1.1rem;
+}
+
+/* Additional Skill Categories */
+.skill-category:nth-child(4) .skill-category-title {
+    color: #059669;
+    border-bottom-color: #059669;
+}
+
+.skill-category:nth-child(5) .skill-category-title {
+    color: var(--orange);
+    border-bottom-color: var(--orange);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - TIMELINE
+   ============================================ */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .timeline-container {
+        padding: 30px 15px;
+    }
+    
+    .timeline-line {
+        left: 30px;
+        transform: none;
+    }
+    
+    .timeline-item {
+        margin-bottom: 40px;
+        justify-content: flex-start;
+    }
+    
+    .timeline-dot {
+        left: 30px;
+        transform: translateX(-50%);
+    }
+    
+    .timeline-item:hover .timeline-dot {
+        transform: translateX(-50%) scale(1.3);
+    }
+    
+    /* Stack all items to the right on mobile */
+    .timeline-left .timeline-content,
+    .timeline-right .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: 60px;
+        margin-right: 0;
+        text-align: left;
+    }
+    
+    .timeline-description {
+        padding-left: 0;
+    }
+    
+    .timeline-description li {
+        padding-left: 20px;
+    }
+    
+    .timeline-description li:before {
+        left: 0;
+        content: "▸";
+    }
+    
+    /* Resume Download */
+    .resume-download-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .resume-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .download-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .timeline-content {
+        padding: 20px;
+    }
+    
+    .timeline-role {
+        font-size: 1.2rem;
+    }
+    
+    .timeline-company {
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+    
+    .timeline-location {
+        font-size: 0.85rem;
+    }
+    
+    .timeline-description li {
+        font-size: 0.85rem;
+    }
+    
+    .resume-icon {
+        font-size: 2.5rem;
+    }
+    
+    .resume-details h3 {
+        font-size: 1.2rem;
+    }
+    
+    .download-btn {
+        padding: 0.9rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
