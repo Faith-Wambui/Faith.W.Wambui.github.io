@@ -299,36 +299,50 @@
    RESPONSIVE DESIGN - TIMELINE
    ============================================ */
 
-/* Tablet */
+/* ============================================
+   RESPONSIVE DESIGN - TIMELINE
+   ============================================ */
+
+/* Tablet and Mobile - Timeline becomes left-aligned */
 @media (max-width: 768px) {
     .timeline-container {
         padding: 30px 15px;
     }
     
+    /* Move line to left side */
     .timeline-line {
         left: 30px;
-        transform: none;
+        transform: translateX(-2px);  /* Center the line itself */
     }
     
     .timeline-item {
         margin-bottom: 40px;
         justify-content: flex-start;
+        align-items: flex-start;  /* Align to top */
     }
     
+    /* Fix dot positioning - THIS IS THE KEY FIX */
     .timeline-dot {
-        left: 30px;
-        transform: translateX(-50%);
+        left: 30px !important;  /* Force position */
+        transform: translateX(-50%) translateY(0) !important;  /* Center on line */
+        top: 20px !important;  /* Fixed distance from top of card */
+        position: absolute !important;
     }
     
     .timeline-item:hover .timeline-dot {
-        transform: translateX(-50%) scale(1.3);
+        transform: translateX(-50%) scale(1.3) !important;  /* Keep centered when scaling */
     }
     
     /* Stack all items to the right on mobile */
+    .timeline-left,
+    .timeline-right {
+        justify-content: flex-start;
+    }
+    
     .timeline-left .timeline-content,
     .timeline-right .timeline-content {
-        width: calc(100% - 60px);
-        margin-left: 60px;
+        width: calc(100% - 70px);
+        margin-left: 70px;
         margin-right: 0;
         text-align: left;
     }
@@ -364,18 +378,49 @@
     }
 }
 
-/* Mobile */
+/* Mobile - Smaller screens */
 @media (max-width: 480px) {
+    .timeline-container {
+        padding: 20px 10px;
+    }
+    
+    /* Adjust line position for smaller screens */
+    .timeline-line {
+        left: 20px;
+        transform: translateX(-2px);
+    }
+    
+    /* Adjust dot position to match */
+    .timeline-dot {
+        left: 20px !important;
+        transform: translateX(-50%) translateY(0) !important;
+        top: 15px !important;
+        width: 20px;
+        height: 20px;
+        border-width: 3px;
+    }
+    
+    .timeline-item:hover .timeline-dot {
+        transform: translateX(-50%) scale(1.2) !important;
+    }
+    
+    /* Adjust content spacing */
+    .timeline-left .timeline-content,
+    .timeline-right .timeline-content {
+        width: calc(100% - 55px);
+        margin-left: 55px;
+    }
+    
     .timeline-content {
-        padding: 20px;
+        padding: 15px;
     }
     
     .timeline-role {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     .timeline-company {
-        font-size: 1rem;
+        font-size: 0.95rem;
         flex-direction: column;
         align-items: flex-start;
         gap: 0.3rem;
@@ -385,8 +430,14 @@
         font-size: 0.85rem;
     }
     
+    .timeline-date {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+    }
+    
     .timeline-description li {
         font-size: 0.85rem;
+        padding-left: 15px;
     }
     
     .resume-icon {
