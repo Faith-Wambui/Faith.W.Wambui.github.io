@@ -3,7 +3,32 @@
    =================================== */
 
 :root {
-    /* Light Theme Colors */
+
+     /* Headings */
+    --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    
+    /* Body */
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    
+    /* Font weights */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    
+    /* Font sizes (responsive) */
+    --fs-h1: clamp(2.5rem, 5vw, 4rem);
+    --fs-h2: clamp(2rem, 4vw, 3rem);
+    --fs-h3: clamp(1.5rem, 3vw, 2rem);
+    --fs-body: clamp(1rem, 2vw, 1.125rem);
+    --fs-small: 0.875rem;
+    
+    /* Line heights */
+    --lh-tight: 1.2;
+    --lh-normal: 1.5;
+    --lh-relaxed: 1.7;
+
+        /* Light Theme Colors */
     --orange: #f76c00;
     --navy: #111144;
     --royal-blue: #1800ad;
@@ -32,6 +57,19 @@
     --transition-fast: 0.2s ease;
     --transition-medium: 0.3s ease;
     --transition-slow: 0.5s ease;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    line-height: var(--lh-tight);
+    font-weight: var(--fw-bold);
+}
+
+body, p, li {
+    font-family: var(--font-body);
+    line-height: var(--lh-normal);
+    font-weight: var(--fw-regular);
 }
 
 [data-theme="dark"] {
